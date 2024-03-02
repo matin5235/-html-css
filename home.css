@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("file/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation:5s background infinite;
+}
+@keyframes background{
+    0%{
+        background-image: url("file/1.jpg");
+    }
+    50%{
+        background-image: url("file/2.jpg");
+    }
+    100%{
+        background-image: url("file/3.jpg");
+    }
+}
+.nvagations{
+    width: auto;
+    height: 50px;
+}
+.nvagations_left{
+    position: relative;
+    width: 60%;
+}
+.nvagations_left ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    color: purple;
+    animation: linecolor 5s linear infinite;
+}
+.nvagations div ul li div{
+    width: 0;
+    height: 1px;
+    background-color: purple;
+    transition: 5s;
+}
+.nvagations div ul li:hover div{
+    width: auto;
+    height: 1px;
+}
+.nvagations_right{
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: end;
+}
+.nvagations_right ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 30px;
+    color: purple;
+}
+.li_tlephon{
+    width: 120px;
+    height: 25px;
+    background-color: #fff;
+    color: #4b214b;
+    border-radius:20px;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-style: solid;
+    border-width: 1px;
+}
+.imgbar{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color:#c7c0cf;
+    position: absolute;
+    top: 100px;
+    left: 700px;
+}
+.imgbar img{
+    position: absolute;
+    right: 65px;
+    background-color:#c7c0cf;
+    mix-blend-mode: darken;
+    border-top-right-radius: 210px;
+    border-top-left-radius: 70px;
+}
+.imgbar img:hover{
+    background-color: #addf22;
+    mix-blend-mode:color-burn;
+}
+.text{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 160px;
+    left: 150px;
+    font-family: 'Croissant One';
+}
+.text h1{
+    width: 250px;
+    padding-bottom: 50px;
+    color: purple;
+    animation: linecolor 5s linear infinite;
+}
+@keyframes linecolor{
+    0%{
+        color: purple;
+    }
+    50%{
+        color: pink;
+    }
+    100%{
+        color: #addf22;
+    }
+}
+.text p{
+    font-size: 13px;
+    color: purple;
+}
+.text h3{
+    width: 160px;
+    height: 25px;
+    background-color: #4b214b;
+    color: #fff;
+    border-radius:20px;
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    box-shadow: 5px 5px 7px #4b214b ;
+}
+.text h3:hover{
+    animation: 1s identifier linear ;
+    transition: 1s;
+}
+.text p {
+    animation: 5s linecolor linear infinite;
+    transition: 1s;
+}
+@keyframes identifier {
+    0%{
+        background-color: #4b214b;
+    }
+    100%{
+        background-color:#addf22;
+        box-shadow: -5px 0px 7px #6e8d19;
+    }
+}
+@keyframes colorr {
+    0%{
+        color: #4b214b;
+    }
+    100%{
+        color:#addf22;
+    }
+}
